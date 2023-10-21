@@ -50,11 +50,11 @@ function sendMail($to,$otp){
           $mail->isSMTP();  
           $mail->Host="smtp.gmail.com";
           $mail->SMTPAuth=true;
-          $mail->Username="laughingyt2022@gmail.com";
+          $mail->Username="abc@gmail.com";
           $mail->Password="fxdmgfbrwbukzysa";
           $mail->SMTPSecure='tls';
           $mail->Port=587;
-          $mail->setFrom("laughingyt2022@gmail.com",'Team Store');
+          $mail->setFrom("abc@gmail.com",'Team Store');
           $mail->addAddress($to);
           $mail->isHTML(true);                                 
           $mail->Subject = "OTP From Team Store";
